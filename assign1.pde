@@ -43,7 +43,7 @@ void draw() {
   // life
   image(life, 10, 10);
   image(life, block, 10);
-  image(life, block*2, 10);
+  image(life, block*2 - 10, 10);
 
   //groundhog
   image(hog, width/2-block/2, block, block, block);
