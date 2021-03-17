@@ -61,7 +61,7 @@ void draw() {
   laserWidth -= 2;
   if (laserWidth <= -40)laserWidth = -40;
   if (laserSpeed == 0)laserWidth = 0;
-  rect(block*robotPosition + laserOffsetX + laserSpeed, block*robotFloor+laserOffsetY-5, laserWidth, 10, 10);
+  rect(block*robotPosition + laserOffsetX + laserSpeed, block*robotFloor+laserOffsetY-5, laserWidth, 10, 2);
 
   image(robot, block*robotPosition, block*robotFloor, block, block);
   
