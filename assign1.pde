@@ -54,14 +54,14 @@ void draw() {
   image(soldier, soldierX, block*5, block, block);
 
   //robot, Laser
-  fill(255, 0, 0);
-  noStroke();
+  stroke(255, 0, 0);
   laserSpeed -= 2;
   if (laserSpeed <= -(block*2)) laserSpeed = 0;
   laserWidth -= 2;
   if (laserWidth <= -40)laserWidth = -40;
   if (laserSpeed == 0)laserWidth = 0;
-  rect(block*robotPosition + laserOffsetX + laserSpeed, block*robotFloor+laserOffsetY-5, laserWidth, 10, 2, 2, 2, 2);
+  strokeWeight(10);
+  line(block*robotPosition + laserOffsetX + laserSpeed, block*robotFloor+laserOffsetY-5, block*robotPosition + laserOffsetX + laserSpeed + laserWidth, block*robotFloor+laserOffsetY-5);
 
   image(robot, block*robotPosition, block*robotFloor, block, block);
   
