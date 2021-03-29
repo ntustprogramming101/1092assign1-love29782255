@@ -20,12 +20,12 @@ float laserWidth = 0;
 void setup() {
   size(640, 480, P2D);
   // loadImage
-  bg = loadImage("bg.jpg");
-  soil = loadImage("soil.png");
-  life = loadImage("life.png");
-  hog = loadImage("groundhog.png");
+  bg = loadImage("img/bg.jpg");
+  soil = loadImage("img/soil.png");
+  life = loadImage("img/life.png");
+  hog = loadImage("img/groundhog.png");
   soldier = loadImage("soldier.png");
-  robot = loadImage("robot.png");
+  robot = loadImage("img/robot.png");
 }
 
 void draw() {
