@@ -24,7 +24,7 @@ void setup() {
   soil = loadImage("img/soil.png");
   life = loadImage("img/life.png");
   hog = loadImage("img/groundhog.png");
-  soldier = loadImage("soldier.png");
+  soldier = loadImage("img/soldier.png");
   robot = loadImage("img/robot.png");
 }
 
